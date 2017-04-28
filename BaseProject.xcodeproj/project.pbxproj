@@ -14,6 +14,7 @@
 		60A890151E821C0B0063BC24 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A8900D1E821C0B0063BC24 /* AFURLRequestSerialization.m */; };
 		60A890161E821C0B0063BC24 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A8900F1E821C0B0063BC24 /* AFURLResponseSerialization.m */; };
 		60A890171E821C0B0063BC24 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A890111E821C0B0063BC24 /* AFURLSessionManager.m */; };
+		60C9FAAB1EB2D96700A784AD /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C9FAAA1EB2D96700A784AD /* NetworkService.m */; };
 		60E6CB7B1E7CE22500BEF505 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6CB7A1E7CE22500BEF505 /* main.m */; };
 		60E6CB7E1E7CE22500BEF505 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6CB7D1E7CE22500BEF505 /* AppDelegate.m */; };
 		60E6CB811E7CE22500BEF505 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6CB801E7CE22500BEF505 /* ViewController.m */; };
@@ -63,6 +64,8 @@
 		60A8900F1E821C0B0063BC24 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		60A890101E821C0B0063BC24 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		60A890111E821C0B0063BC24 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		60C9FAA91EB2D96700A784AD /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		60C9FAAA1EB2D96700A784AD /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
 		60E6CB761E7CE22500BEF505 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E6CB7A1E7CE22500BEF505 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60E6CB7C1E7CE22500BEF505 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +151,34 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		60C9FAA81EB2D94600A784AD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				60E6CBB21E7D076E00BEF505 /* BaseNavigationController.h */,
+				60E6CBB31E7D076E00BEF505 /* BaseNavigationController.m */,
+				600446351E84BEE40030B168 /* BaseViewController.h */,
+				600446361E84BEE40030B168 /* BaseViewController.m */,
+				60E6CBB51E7D07B800BEF505 /* BaseTabbarController.h */,
+				60E6CBB61E7D07B800BEF505 /* BaseTabbarController.m */,
+				60C9FAA91EB2D96700A784AD /* NetworkService.h */,
+				60C9FAAA1EB2D96700A784AD /* NetworkService.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		60C9FAAC1EB2D98100A784AD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				60F5D0FA1E8F8CAB006FA3CC /* UIViewController+HUD.h */,
+				60F5D0FB1E8F8CAB006FA3CC /* UIViewController+HUD.m */,
+				60E6CBAC1E7CE25400BEF505 /* UILabel+label.h */,
+				60E6CBAD1E7CE25400BEF505 /* UILabel+label.m */,
+				60E6CC691E80083300BEF505 /* UIView+frame.h */,
+				60E6CC6A1E80083300BEF505 /* UIView+frame.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		60E6CB6D1E7CE22500BEF505 = {
 			isa = PBXGroup;
 			children = (
@@ -175,18 +206,8 @@
 				60E6CB7D1E7CE22500BEF505 /* AppDelegate.m */,
 				60E6CB7F1E7CE22500BEF505 /* ViewController.h */,
 				60E6CB801E7CE22500BEF505 /* ViewController.m */,
-				60F5D0FA1E8F8CAB006FA3CC /* UIViewController+HUD.h */,
-				60F5D0FB1E8F8CAB006FA3CC /* UIViewController+HUD.m */,
-				60E6CBAC1E7CE25400BEF505 /* UILabel+label.h */,
-				60E6CBAD1E7CE25400BEF505 /* UILabel+label.m */,
-				60E6CBB21E7D076E00BEF505 /* BaseNavigationController.h */,
-				60E6CBB31E7D076E00BEF505 /* BaseNavigationController.m */,
-				600446351E84BEE40030B168 /* BaseViewController.h */,
-				600446361E84BEE40030B168 /* BaseViewController.m */,
-				60E6CBB51E7D07B800BEF505 /* BaseTabbarController.h */,
-				60E6CBB61E7D07B800BEF505 /* BaseTabbarController.m */,
-				60E6CC691E80083300BEF505 /* UIView+frame.h */,
-				60E6CC6A1E80083300BEF505 /* UIView+frame.m */,
+				60C9FAAC1EB2D98100A784AD /* Category */,
+				60C9FAA81EB2D94600A784AD /* Base */,
 				60A890031E821BFC0063BC24 /* Tools */,
 				60E6CBBB1E7D10B000BEF505 /* PrefixHeader.h */,
 				60E6CB821E7CE22600BEF505 /* Main.storyboard */,
@@ -370,6 +391,7 @@
 				60A890131E821C0B0063BC24 /* AFNetworkReachabilityManager.m in Sources */,
 				60E6CB7E1E7CE22500BEF505 /* AppDelegate.m in Sources */,
 				60E6CB7B1E7CE22500BEF505 /* main.m in Sources */,
+				60C9FAAB1EB2D96700A784AD /* NetworkService.m in Sources */,
 				60E6CBAE1E7CE25400BEF505 /* UILabel+label.m in Sources */,
 				600446371E84BEE40030B168 /* BaseViewController.m in Sources */,
 				60E6CC6B1E80083300BEF505 /* UIView+frame.m in Sources */,
