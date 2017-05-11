@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    int a = PopViewSelectToShare;
+    
     NSLog(@" 当前线程1  %@",[NSThread currentThread]);
     NSLog(@" 主线程1    %@",[NSThread mainThread]);
 
