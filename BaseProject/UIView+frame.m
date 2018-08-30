@@ -9,56 +9,51 @@
 #import "UIView+frame.h"
 
 @implementation UIView (frame)
-- (void)setX:(CGFloat)x
-{
+
+- (void)setX:(CGFloat)x{
     CGRect frame = self.frame;
     frame.origin.x = x;
     self.frame = frame;
 }
 
-- (CGFloat)x
-{
-    return self.frame.origin.x;
+- (CGFloat)x{
+    return CGRectGetMinX(self.frame);
 }
 
-- (void)setY:(CGFloat)y
-{
+- (void)setY:(CGFloat)y{
     CGRect frame = self.frame;
     frame.origin.y = y;
     self.frame = frame;
 }
 
-- (CGFloat)y
-{
-    return self.frame.origin.y;
+- (CGFloat)y{
+    return CGRectGetMinY(self.frame);
 }
 
-- (void)setWidth:(CGFloat)width
-{
+- (void)setWidth:(CGFloat)width{
     CGRect frame = self.frame;
     frame.size.width = width;
     self.frame = frame;
 }
 
-- (CGFloat)width
-{
+- (CGFloat)width{
     return self.frame.size.width;
 }
 
-- (void)setHeight:(CGFloat)height
-{
+- (void)setHeight:(CGFloat)height{
     CGRect frame = self.frame;
     frame.size.height = height;
     self.frame = frame;
 }
 
-- (CGFloat)height
-{
-    return self.frame.size.height;
+- (CGFloat)height{
+    return CGRectGetHeight(self.frame);
 }
+
 - (CGFloat)bottom {
-    return self.frame.origin.y + self.frame.size.height;
+    return CGRectGetMaxY(self.frame);
 }
+
 - (void)setBottom:(CGFloat)bottom {
     CGRect frame = self.frame;
     frame.origin.y = bottom - frame.size.height;
@@ -66,23 +61,18 @@
 }
 
 - (CGFloat)centerX {
-    return self.center.x;
+    return CGRectGetMidX(self.frame);
 }
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)setCenterX:(CGFloat)centerX {
     self.center = CGPointMake(centerX, self.center.y);
 }
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
 - (CGFloat)centerY {
-    return self.center.y;
+    return CGRectGetMidY(self.frame);
 }
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)setCenterY:(CGFloat)centerY {
     self.center = CGPointMake(self.center.x, centerY);
 }
