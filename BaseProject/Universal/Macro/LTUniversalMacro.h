@@ -10,15 +10,21 @@
 #define LTUniversalMacro_h
 
 #define kStatusBarHeight ([UIApplication sharedApplication].statusBarFrame.size.height)
-// 适配iPhone x 底栏高度
-#define KTabbarHeight     ([[UIApplication sharedApplication] statusBarFrame].size.height>20?44:0)
+
 //导航栏加状态栏高度
 #define KNavigationBarHeight (kStatusBarHeight+44)
-//底部宏，
-#define SafeAreaBottomHeight (kDevice_Is_iPhoneX?44:0)
+// 适配iPhone x 底栏高度
+#define SafeAreaBottomHeight (kDevice_Is_iPhoneX_All?44:0)
 
-//是否是iPhone x
+//是否是iPhone X
 #define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+//是否是iPhone XR
+#define kDevice_Is_iPhoneXR ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
+
+//判断iPhoneXs Max
+#define kDevice_Is_iPhoneXR_XS_MAX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
+//判断iPhoneX 系列
+#define kDevice_Is_iPhoneX_All ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
 
 //字符串是否为空
 #define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
@@ -94,19 +100,9 @@ blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 //由弧度转换角度
 #define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
 
-//首页缓存路径
-#define LT_HomeModel_path   [NSHomeDirectory() stringByAppendingString:@"/Documents/HomeModelData.txt"]
+
 //系统参数缓存
 #define LT_SystemData_path   [NSHomeDirectory() stringByAppendingString:@"/Documents/SystemData.txt"]
-//足彩 相似赔率是否下单
-#define LT_FootBallLotteryRate_path   [NSHomeDirectory() stringByAppendingString:@"/Documents/FootBallLotteryRate.txt"]
-//日间模式
-#define LT_DayState_path   [NSHomeDirectory() stringByAppendingString:@"/Documents/DayState.txt"]
-
-#define kBundleIdentifier [[NSBundle mainBundle] bundleIdentifier]
-
-//亿众的客服图片
-#define LT_ServiceImage_path   [NSHomeDirectory() stringByAppendingString:@"/Documents/ServiceImage.txt"]
 
 
 #endif /* LTUniversalMacro_h */

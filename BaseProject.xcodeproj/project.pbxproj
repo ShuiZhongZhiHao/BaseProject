@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A723D8921742EE70016F878 /* NSString+DecimalsCalculation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A723D8821742EE60016F878 /* NSString+DecimalsCalculation.m */; };
 		600446371E84BEE40030B168 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600446361E84BEE40030B168 /* BaseViewController.m */; };
 		601161231EC40F5E00E46DC8 /* NewsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 601161221EC40F5E00E46DC8 /* NewsConfig.m */; };
 		60A890121E821C0B0063BC24 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A890061E821C0B0063BC24 /* AFHTTPSessionManager.m */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A723D8721742EE60016F878 /* NSString+DecimalsCalculation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DecimalsCalculation.h"; sourceTree = "<group>"; };
+		3A723D8821742EE60016F878 /* NSString+DecimalsCalculation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DecimalsCalculation.m"; sourceTree = "<group>"; };
 		3ADBFEE02137F79200CC4560 /* LTUniversalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTUniversalMacro.h; sourceTree = "<group>"; };
 		600446351E84BEE40030B168 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		600446361E84BEE40030B168 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 		60C9FAAC1EB2D98100A784AD /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				3A723D8721742EE60016F878 /* NSString+DecimalsCalculation.h */,
+				3A723D8821742EE60016F878 /* NSString+DecimalsCalculation.m */,
 				60F5D0FA1E8F8CAB006FA3CC /* UIViewController+HUD.h */,
 				60F5D0FB1E8F8CAB006FA3CC /* UIViewController+HUD.m */,
 				60E6CBAC1E7CE25400BEF505 /* UILabel+label.h */,
@@ -456,6 +461,7 @@
 				60E6CC6B1E80083300BEF505 /* UIView+frame.m in Sources */,
 				60F5D0F91E8F8C6C006FA3CC /* MBProgressHUD.m in Sources */,
 				60A890141E821C0B0063BC24 /* AFSecurityPolicy.m in Sources */,
+				3A723D8921742EE70016F878 /* NSString+DecimalsCalculation.m in Sources */,
 				60A890151E821C0B0063BC24 /* AFURLRequestSerialization.m in Sources */,
 				60F5D0FC1E8F8CAB006FA3CC /* UIViewController+HUD.m in Sources */,
 				60E6CBB71E7D07B800BEF505 /* BaseTabbarController.m in Sources */,
